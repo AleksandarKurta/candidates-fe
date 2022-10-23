@@ -1,0 +1,56 @@
+<h1>Create Candidate</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+<div class="form-wrapper">
+  <mat-form-field appearance="fill">
+    <mat-label>First name</mat-label>
+    <input matInput formControlName="firstName" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Last name</mat-label>
+    <input matInput formControlName="lastName" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="pat@example.com" formControlName="email" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>JMBG</mat-label>
+    <input matInput formControlName="jmbg" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Birth year</mat-label>
+    <input matInput formControlName="birthYear" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Mobile</mat-label>
+    <input matInput formControlName="mobile" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Note</mat-label>
+    <textarea matInput formControlName="note" required></textarea>
+  </mat-form-field>
+
+  <div class="mat-form-field">
+    <mat-checkbox formControlName="employed">Employed</mat-checkbox>
+  </div>
+</div>
+
+<button
+  mat-raised-button
+  type="submit"
+  class="demo-button"
+  color="primary"
+  [disabled]="!profileForm.valid"
+>
+  Submit
+</button>
+
+</form>

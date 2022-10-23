@@ -1,0 +1,19 @@
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  mat-checkbox,
+  mat-form-field {
+    margin: 20px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
+
+.mat-button {
+  margin: 20px;
+  font-size: 20px;
+}

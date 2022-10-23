@@ -1,0 +1,23 @@
+<mat-nav-list>
+  <div class="profile-card">
+    <div class="header">
+      <h2>Admin name</h2>
+      <h4>admin@example.com</h4>
+    </div>
+    <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="Admin name">
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Pages</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+    <mat-icon>person</mat-icon>
+    Candidates List
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="create/candidate">
+    <mat-icon>person_add</mat-icon>
+    Create Candidate
+  </a>
+</mat-nav-list>
